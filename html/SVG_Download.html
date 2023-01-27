@@ -1,64 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    </style>
+    <script>
+  <!-- begin snippet: js hide: false console: false babel: null -->
+  <!-- language: lang-js -->
 
+      var btn = document.querySelector('button');
+      var svg = document.querySelector('svg');
+      var canvas = document.querySelector('canvas');
 
+      function triggerDownload (imgURI) {
+        var evt = new MouseEvent('click', {
+          view: window,
+          bubbles: false,
+          cancelable: true
+        });
 
-<script>
-<!-- begin snippet: js hide: false console: false babel: null -->
+        var a = document.createElement('a');
+        a.setAttribute('download', 'MY_COOL_IMAGE.png');
+        a.setAttribute('href', imgURI);
+        a.setAttribute('target', '_blank');
 
-<!-- language: lang-js -->
+        a.dispatchEvent(evt);
+      }
 
-    var btn = document.querySelector('button');
-    var svg = document.querySelector('svg');
-    var canvas = document.querySelector('canvas');
+      btn.addEventListener('click', function () {
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var data = (new XMLSerializer()).serializeToString(svg);
+        var DOMURL = window.URL || window.webkitURL || window;
 
-    function triggerDownload (imgURI) {
-      var evt = new MouseEvent('click', {
-        view: window,
-        bubbles: false,
-        cancelable: true
+        var img = new Image();
+        var svgBlob = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
+        var url = DOMURL.createObjectURL(svgBlob);
+
+        img.onload = function () {
+          ctx.drawImage(img, 0, 0);
+          DOMURL.revokeObjectURL(url);
+
+          var imgURI = canvas
+              .toDataURL('image/png')
+              .replace('image/png', 'image/octet-stream');
+
+          triggerDownload(imgURI);
+        };
+
+        img.src = url;
       });
-
-      var a = document.createElement('a');
-      a.setAttribute('download', 'MY_COOL_IMAGE.png');
-      a.setAttribute('href', imgURI);
-      a.setAttribute('target', '_blank');
-
-      a.dispatchEvent(evt);
-    }
-
-    btn.addEventListener('click', function () {
-      var canvas = document.getElementById('canvas');
-      var ctx = canvas.getContext('2d');
-      var data = (new XMLSerializer()).serializeToString(svg);
-      var DOMURL = window.URL || window.webkitURL || window;
-
-      var img = new Image();
-      var svgBlob = new Blob([data], {type: 'image/svg+xml;charset=utf-8'});
-      var url = DOMURL.createObjectURL(svgBlob);
-
-      img.onload = function () {
-        ctx.drawImage(img, 0, 0);
-        DOMURL.revokeObjectURL(url);
-
-        var imgURI = canvas
-            .toDataURL('image/png')
-            .replace('image/png', 'image/octet-stream');
-
-        triggerDownload(imgURI);
-      };
-
-      img.src = url;
-    });
-</script>
-<!-- language: lang-html -->
-
+    </script>
+  </head>
+  <body>
+    <!-- language: lang-html -->
     <button>svg to png</button>
-
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="200" height="200">
       <rect x="10" y="10" width="50" height="50" />
       <text x="0" y="100">Look, i'm cool</text>
     </svg>
-
     <canvas id="canvas"></canvas>
-
-<!-- end snippet -->
-
+    <!-- end snippet -->
+  </body>
+</html>
