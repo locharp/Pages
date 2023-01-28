@@ -80,7 +80,8 @@ nav ul li a
 
 iframe
 {
-  borfer: 0;
+  border: 0;
+  padding: 0px;
 }
 
 .midContent
