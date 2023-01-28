@@ -1,0 +1,1 @@
+If you think that my views are conspriacy theories, too negative or something in the distant future, congraduation. You probably have a happy life.
