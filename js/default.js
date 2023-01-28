@@ -1,10 +1,14 @@
 'use strict';
 
-function showRandom(className) {
+function hideAll(className) {
   let elements = document.getElementsByClassName(className);
   for (let i = 0; i < elements.length; i++)
-    elements[i].style.display = 'none';
-  elements[Math.floor(Math.random() * elements.length)].style.display = 'inline';
+    elements[i].hidden = 'hidden';
+}
+
+function showRandom(className) {
+  let elements = document.getElementsByClassName(className);
+  elements[Math.floor(Math.random() * elements.length)].removeAttribute('hidden');
 }
 
 onload = () => {
