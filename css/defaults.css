@@ -78,18 +78,21 @@ nav ul li a
   margin: 0px;
 }
 
+iframe
+{
+  borfer: 0;
+}
+
 .midContent
 {
   width: 100%;
   height: 60svh;
-  border: 0;
 }
 
 .rightContent
 {
   width: 85%;
   height: 90svh;
-  border: 0;
 }
 
 footer
