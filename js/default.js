@@ -12,5 +12,5 @@ function showRandom(className) {
 }
 
 onload = () => {
-  showRandom('quotes');
+  showRandom('quote');
 }
