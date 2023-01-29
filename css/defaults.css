@@ -74,7 +74,7 @@ nav ul li a
 
 .leftNav ul
 {
-  height: 90svh;        
+  height: 100vh;        
   overflow-y: scroll;
   padding: 0px;
   margin: 0px;
@@ -89,13 +89,13 @@ iframe
 .midContent
 {
   width: 100%;
-  height: 70svh;
+  height: 80svh;
 }
 
 .rightContent
 {
   width: 85%;
-  height: 95svh;
+  height: 100vh;
 }
 
 footer
