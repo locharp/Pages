@@ -9,6 +9,7 @@
       {
         background-color: hsl(0, 0%, 0%);
         color: hsl(120, 60%, 30%);
+        margin: 0px;
       }
 
       header
@@ -16,14 +17,24 @@
         color: hsla(60, 70%, 40%);
       }
 
+      ::-webkit-scrollbar
+      {
+        display: none;
+      }
+
       nav
       {
+        text-align: center;
+      }
+
+      .topNav
+      {
         display: flex;
-        background-color: hsla(300, 50%, 70%, 50%);
+        background-color: hsla(300, 30%, 70%, 40%);
         width: 100%;
       }
 
-      nav ul
+      .topNav ul
       {
         display: inline-block;
         white-space: nowrap;
@@ -35,11 +46,10 @@
         margin: auto;
       }
 
-      nav ul li
+      .topNav ul li
       {
         display: inline-block;
         width: 5rem;
-        text-align: center;
       }
 
       nav ul li a
@@ -48,78 +58,97 @@
         color: hsl(0, 0%, 0%);
         text-decoration: none;
       }
-      
-      #navLeft
+
+      .navLeft
       {
         background-color: hsla(0, 0%, 0%, 40%);
-        float: Left;
-        text-align: center;
+        float: left;
       }
 
-      #navRight
+      .navRight
       {
         background-color: hsla(0, 0%, 0%, 40%);
         float: right;
-        text-align: center;
+      }
+
+      .leftNav
+      {
+        float: left;
+        background-color: hsla(180, 30%, 70%, 40%);
+        width: 15%;
+      }
+
+      .leftNav ul
+      {
+        height: 90svh;        
+        overflow-y: scroll;
+        padding: 0px;
+        margin: 0px;
       }
 
       iframe
       {
-        width: 100%;
-        height: 50vh;
-        border: 0;
+        border: 0px;
+        padding: 0px;
       }
-      
+
+      .midContent
+      {
+        width: 100%;
+        height: 60svh;
+      }
+
+      .rightContent
+      {
+        width: 85%;
+        height: 90svh;
+      }
+
       footer
       {
         font-size: 60%;
-        height: 10vh;
+        height: 10svh;
         overflow-y: scroll;
       }
     </style>
     <script>
       'use strict';
 
-      function hideAll(className) {
+      function hideAll(className)
+      {
         let elements = document.getElementsByClassName(className);
         for (let i = 0; i < elements.length; i++)
           elements[i].hidden = 'hidden';
       }
 
-      function showRandom(className) {
+      function showRandom(className)
+      {
         let elements = document.getElementsByClassName(className);
         elements[Math.floor(Math.random() * elements.length)].removeAttribute('hidden');
       }
 
-      onload = () => {
+      onload = () =>
+      {
         showRandom('quote');
       }
     </script>
   </head>
   <body>
-    <header>
-      Header
-    </header>
-    <nav>
-      <div id='navLeft'>&lt;&lt;</div>
-     <ul>
+    <nav class='topNav'>
+      <ul>
         <li><a href='index.html'>Home</a></li>
         <li><a href='html/views.html' target='content'>Views</a></li>
-        <li>Diary</li>
-        <li>Dev</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>        
+        <li><a href='html/diary.html' target='content'>Diary</a></li>
+        <li><a href='html/dev.html' target='content'>Dev</a></li>
+        <li>Games</li>
       </ul>
-      <div id='navRight'>&gt;&gt;</div>
     </nav>
-    <iframe name='content'></iframe>
+    <iframe name='content' class='midContent' src='md/frontpage.md'></iframe>
     <footer>
       <span>Random quote:&emsp;</span>
       <span class='quote' hidden='hidden'>When you have to reverse the reality to like it.</span>
       <span class='quote' hidden='hidden'>Q: Is there something we think we are very good at but we are actually inferior on the international level?<br />
-        A: Being lickspittles for the communists. Even tbe worst offenders among us have the excuse of not having a choice. Some foreigners however, are simply so willingful to lick that they no longer have personal values, no soul.</span>
+        A: Being lickspittles for the communists. Even tbe worst offenders among us have the excuse of not having a choice. Some foreigners however, are simply so willing to lick that they no longer have personal values, no soul.</span>
     </footer>
   </body>
 <html>
