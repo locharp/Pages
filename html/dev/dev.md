@@ -1,2 +1,0 @@
-Not constructed yet.
-You can see my code snippets in the <a href='https://github.com/locharp/code-snippets'>GitHub repository</a>.
