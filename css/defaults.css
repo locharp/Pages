@@ -7,7 +7,7 @@ body
 
 header
 {
-  color: hsla(60, 70%, 40%);
+  color: hsla(60, 70%, 50%);
 }
 
 ::-webkit-scrollbar
@@ -23,7 +23,7 @@ nav
 .topNav
 {
   display: flex;
-  background-color: hsla(300, 30%, 70%, 40%);
+  background-color: hsla(270, 60%, 50%);
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ nav ul li a
 .leftNav
 {
   float: left;
-  background-color: hsla(180, 30%, 70%, 40%);
+  background-color: hsla(180, 60%, 50%);
   width: 15%;
 }
 
