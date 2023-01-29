@@ -1,5 +1,5 @@
 ### TLDR: What is meaningless is to say that it is meaningless and do nothing.
-**I do not advocate donation and sponsorship. It is easy to be exploited by those who stray and those who exploit everything to begin with. Unless you are sure it will be put into good use. I suggest saving your resources and make use of them yourselves.
+**I do not advocate donation and sponsorship. It often gets exploited by those who stray and those who exploit everything to begin with. Unless you are sure it will be put into good use. I suggest saving your resources and make use of them yourselves.
 
 ---
 ## What can we do
