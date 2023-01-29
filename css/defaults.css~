@@ -1,0 +1,102 @@
+body
+{
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(120, 60%, 30%);
+}
+
+header
+{
+  color: hsla(60, 70%, 40%);
+}
+
+::-webkit-scrollbar
+{
+  display: none;
+}
+
+nav
+{
+  text-align: center;
+}
+
+.topNav
+{
+  display: flex;
+  background-color: hsla(300, 30%, 70%, 40%);
+  width: 100%;
+}
+
+.topNav ul
+{
+  display: inline-block;
+  white-space: nowrap;
+  list-style-type: none;
+  overflow-x: scroll;
+  width: 86%;
+  align-self: center;
+  padding: 0px;
+  margin: auto;
+}
+
+.topNav ul li
+{
+  display: inline-block;
+  width: 5rem;
+}
+
+nav ul li a
+{
+  display: block;
+  color: hsl(0, 0%, 0%);
+  text-decoration: none;
+}
+
+
+#navLeft
+{
+  background-color: hsla(0, 0%, 0%, 40%);
+  float: left;
+}
+
+#navRight
+{
+  background-color: hsla(0, 0%, 0%, 40%);
+  float: right;
+}
+
+.leftNav
+{
+  float: left;
+  background-color: hsla(180, 30%, 70%, 40%);
+  width: 15%;
+}
+
+.leftNav ul
+{
+  height: 90svh;        
+  overflow-y: scroll;
+  padding: 0px;
+  margin: 0px;
+}
+
+.midContent
+{
+  width: 100%;
+  height: 50vh;
+  border: 0;
+}
+
+.rightContent
+{
+  background-color: red;
+  width: 85%;
+  height: 90svh;
+  border: 0;
+}
+
+footer
+{
+  font-size: 60%;
+  height: 10vh;
+  overflow-y: scroll;
+}
