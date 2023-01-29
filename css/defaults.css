@@ -24,7 +24,7 @@ nav
 .topNav
 {
   display: flex;
-  background-color: hsla(270, 30%, 40%);
+  background-color: hsla(180, 30%, 40%);
   width: 100%;
 }
 
@@ -68,7 +68,7 @@ nav ul li a
 .leftNav
 {
   float: left;
-  background-color: hsla(180, 30%, 40%);
+  background-color: hsla(180, 25%, 40%);
   width: 15%;
 }
 
