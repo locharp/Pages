@@ -1,6 +1,8 @@
-## TLDR: We can move on, but we cannot take wrongs for norms. We have to be able to call out problems even when we have moved on. Until they are corrected.
+### TLDR: We can move on, but we cannot take wrongs for norms. We have to be able to call out problems even when we have moved on. Until they are corrected.
 [But what can we do?]()
+
 ---
+## Do not take wrongs as norms
 I don't want to mince the words to much such as what the definitions of right and wrong are. I call something wrong when it cause more harm then good.
 
 We are taking many wrongs for norms because we can do nothing with them. From exploitation in workplaces to atrocities of ruling powers. The same have repeated for thousand of years if history is right. Why's that?

@@ -1,6 +1,9 @@
-##TLDR: What is meaningless is to say that it is meaningless and do nothing.
+### TLDR: What is meaningless is to say that it is meaningless and do nothing.
+**I do not advocate donation and sponsorship. It is easy for exploitation by those who forget what they stood for and those who exploit everything to begin with. Unless you are sure it will be put into good use. I suggest saving your resources and make use of them yourselves.
 
-Contribute however little we can. Each of us are powerless poor common people. It is tempting to say "what can I do?" and leave the problem to the next, but isn't it exactly why we are still facing the problems nowadays?
+---
+## What can we do
+Do however little we can. Each of us are powerless poor common people. It is tempting to say "what can I do?" and leave the problem to the next, but isn't it exactly why we are still facing the problems nowadays?
 
 Never think that your contribution is too small. Allow me to make a suggestion and use it as an example:
 ## Try to avoid spending on products, including services, from bad sources, such as unscrupulous businesses and autocracies.
