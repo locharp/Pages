@@ -1,5 +1,5 @@
 ### TLDR: We can move on, but we cannot take wrongs for norms. We have to be able to call out problems even when we have moved on. Until they are corrected.
-[But what can we do?]()
+[But what can we do?](https://locharp.github.io/Pages/md/WhatCanWeDo.md)
 
 ---
 ## Do not take wrongs as norms
