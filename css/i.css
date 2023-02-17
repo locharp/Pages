@@ -26,8 +26,7 @@ h2
 
 #beebee
 {
-    display: inline;
-    width:10%;
+    width:20%;
 }
 
 #notice
@@ -53,7 +52,7 @@ input
 
 input[type='button']
 {
-    background-color: var(--imgbb);
+    background-color: var(--midblue);
     font-size: 70px;
     color: hsl(0, 0%, 80%);
     border: 0px;
@@ -62,5 +61,4 @@ input[type='button']
 
 .midblue
 {
-  color: var(--midblue);
-}
+  color: var(--
