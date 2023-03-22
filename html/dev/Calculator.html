@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <title>Calculator</title>
+    <link type='text/css' rel='stylesheet' href='Calculator.css' />
+    <script type='text/javascript' src='Calculator.js'></script>
+  </head>
+
+  <body>
+    <div id='calculator'>
+      <p id='oup'>0</p>
+      <input type='text' id='inp' value='0' />
+      <div id='keypad'>
+        <button onclick='change_keyset()'>Shift</button>
+        <button onclick='store()'>M+</button>
+        <button onclick='recall()'>MR</button>
+        <button onclick='key_in("(")'>(</button>
+        <button onclick='key_in(")")'>)</button>
+        <div id='keyset_1'>
+          <button onclick='key_in("sin(")'>sin</button>
+          <button onclick='key_in("cos(")'>cos</button>
+          <button onclick='key_in("tan(")'>tan</button>
+          <button onclick='del()'>DEL</button>
+          <button onclick='all_clear()'>AC</button>
+          <button onclick='key_in("!")'>x!</button>
+          <button onclick='key_in("^(")'>pow</button>
+          <button onclick='key_in("log")'>log</button>
+          <button onclick='key_in("^2")'>x²</button>
+          <button onclick='key_in("√(")'>√</button>
+          <button onclick='key_in(7)'>7</button>
+          <button onclick='key_in(8)'>8</button>
+          <button onclick='key_in(9)'>9</button>
+          <button onclick='key_in("^(-1)")'>1/x</button>
+          <button onclick='key_in("%")'>%</button>
+          <button onclick='key_in(4)'>4</button>
+          <button onclick='key_in(5)'>5</button>
+          <button onclick='key_in(6)'>6</button>
+          <button onclick='key_in("*")'>*</button>
+          <button onclick='key_in("/")'>/</button>
+          <button onclick='key_in(1)'>1</button>
+          <button onclick='key_in(2)'>2</button>
+          <button onclick='key_in(3)'>3</button>
+          <button onclick='key_in("+")'>+</button>
+          <button onclick='key_in("-")'>-</button>
+          <button onclick='key_in("π")'>π</button>
+          <button onclick='key_in(0)'>0</button>
+          <button onclick='key_in("e")'>e</button>
+          <button onclick='key_in(".")'>.</button>
+          <button onclick='compute()'>=</button>
+        </div>
+        <div id='keyset_2' hidden='true'>
+          <button onclick='key_in("arcsin(")'>asin</button>
+          <button onclick='key_in("arccos(")'>acos</button>
+          <button onclick='key_in("arctan(")'>atan</button>
+          <button onclick='del()'>DEL</button>
+          <button onclick='all_clear()'>AC</button>
+          <button onclick='key_in("P")'>nPk</button>
+          <button onclick='key_in("C")'>nCk</button>
+          <button onclick='key_in("Px==(")'>Px</button>
+          <button onclick='key_in("PX<=(")'>P(X&le;)</button>
+          <button onclick='key_in("PX>=(")'>P(X&ge;)</button>
+          <button onclick='key_in(7)'>7</button>
+          <button onclick='key_in(8)'>8</button>
+          <button onclick='key_in(9)'>9</button>
+          <button onclick='key_in("^(-1)")'>1/x</button>
+          <button onclick='key_in("%")'>%</button>
+          <button onclick='key_in(4)'>4</button>
+          <button onclick='key_in(5)'>5</button>
+          <button onclick='key_in(6)'>6</button>
+          <button onclick='key_in("*")'>*</button>
+          <button onclick='key_in("/")'>/</button>
+          <button onclick='key_in(1)'>1</button>
+          <button onclick='key_in(2)'>2</button>
+          <button onclick='key_in(3)'>3</button>
+          <button onclick='key_in("+")'>+</button>
+          <button onclick='key_in("-")'>-</button>
+          <button onclick='key_in("e")'>e</button>
+          <button onclick='key_in(0)'>0</button>
+          <button onclick='key_in(",")'>,</button>
+          <button onclick='key_in(".")'>.</button>
+          <button onclick='compute()'>=</button>
+        </div>
+      </div>
+  </body>
+
+</html>
