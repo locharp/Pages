@@ -100,7 +100,6 @@ iframe
 
 footer
 {
-  font-size: 80%;
-  height: 10svh;
+  height: 15svh;
   overflow-y: scroll;
 }
