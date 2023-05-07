@@ -66,14 +66,14 @@ function at_least(n, k, p)
     {
         for (let i = k; i <= n; i++)
         {
-            res += exact(n, k, p);
+            res -= exact(n, k, p);
         }
     }
     else
     {
         res = 1;
         
-        for (let i = 0; i < k; i++)
+        for (let i = 0; i <= k; i++)
         {
             res -= exact(n, k, p);
         }
@@ -84,7 +84,7 @@ function at_least(n, k, p)
 
 function at_most(n, k, p)
 {
-    return 1 - at_least(n, k, p);
+    return 1 - at_least(n, k + 1, p);
 }
 
 window.onload = () => {
