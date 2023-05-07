@@ -10,3 +10,8 @@ table, th, td
     border: 2px solid #336699;
     text-align: center;
 }
+
+input[type='number'], button
+{
+    font-size: 28px;
+}
