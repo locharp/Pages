@@ -1,6 +1,10 @@
-function forecast()
+'use strict';
+
+function lookup()
 {
-    const api = 'https://api.open-meteo.com/v1/meteofrance?latitude=55&longitude=25.8&timezone=EET&daily=apparent_temperature_min,apparent_temperature_max'; 
+    const latitude = document.querySelector('#latitude').value;
+    const longitude = document.querySelector('#longitude').value;
+    const api = `https://api.open-meteo.com/v1/meteofrance?latitude=${latitude}&longitude=${longitude}&timezone=EET&daily=apparent_temperature_min,apparent_temperature_max`; 
     
     fetch(api)
         .then(response => response.json())
@@ -17,13 +21,9 @@ function forecast()
                 s += `<tr><td>${time[i]}</td><td>${min[i]}</td><td>${max[i]}</td><tr>`
             }
             
-            result.innerHTML += s;
+            result.innerHTML = s;
         })
         .catch(error => {
             result.innerHTML = error;
         });
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    forecast();
-});
