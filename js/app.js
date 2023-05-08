@@ -1,5 +1,5 @@
-import React from 'js/react.development.js';
-import ReactDOM from 'js/react-dom.development.js';
+//import React from 'js/react.development.js';
+//import ReactDOM from 'js/react-dom.development.js';
 
 function Hello()
 {
