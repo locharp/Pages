@@ -55,7 +55,7 @@ function nCk(n, k)
 
 function exact(n, k, p)
 {
-    return nCk(n, k) * Math.pow(p, k) * Math.pow(p, n - k);
+    return nCk(n, k) * Math.pow(p, k) * Math.pow(1 - p, n - k);
 }
 
 function at_least(n, k, p)
