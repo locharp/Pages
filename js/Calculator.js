@@ -66,7 +66,7 @@ function at_least(n, k, p)
     {
         for (let i = k; i <= n; i++)
         {
-            res += exact(n, k, p);
+            res += exact(n, i, p);
         }
     }
     else
@@ -75,7 +75,7 @@ function at_least(n, k, p)
         
         for (let i = 0; i < k; i++)
         {
-            res -= exact(n, k, p);
+            res -= exact(n, i, p);
         }
     }
 
