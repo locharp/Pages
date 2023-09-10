@@ -13,5 +13,6 @@ table, th, td
 
 input[type='number'], button
 {
+    color: #22aa22;
     font-size: 22px;
 }
