@@ -1,9 +1,14 @@
 'use strict';
 
+
+let latitude = 51.52
+let longitude = -0.13
+
+
 function lookup()
 {
-    const latitude = document.querySelector('#latitude').value;
-    const longitude = document.querySelector('#longitude').value;
+    latitude = document.querySelector('#latitude').value;
+    longitude = document.querySelector('#longitude').value;
     const api = `https://api.open-meteo.com/v1/meteofrance?latitude=${latitude}&longitude=${longitude}&timezone=EET&daily=apparent_temperature_min,apparent_temperature_max`; 
     
     fetch(api)
