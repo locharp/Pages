@@ -27,3 +27,6 @@ function lookup()
             result.innerHTML = error;
         });
 }
+
+
+lookup()
